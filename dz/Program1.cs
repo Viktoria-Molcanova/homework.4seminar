@@ -1,6 +1,13 @@
 // Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
-Console.WriteLine("Введите 1 число");
+Console.Write("Введите число A: ");
 int A = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите 2 число");
+Console.Write("Введите число B: ");
 int B = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Math.Pow(A, B));
+int res = A;
+
+for (int i = 2; i <= B; i++)
+{
+    res *= A;
+}
+
+Console.WriteLine($"{res}");
