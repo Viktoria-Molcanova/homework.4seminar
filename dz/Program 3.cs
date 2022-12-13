@@ -1,11 +1,21 @@
  //Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
-Console.Write("Введите  число: ");
-int A = Convert.ToInt32(Console.ReadLine());
-int result = 0;
-while (A ! = 0)
+public static class Lesson456
+{
+    static void Main()
     {
-    result += A % 10;
-    A /= 10;
-    }
+        /// Пользователь вводит число А
+        Console.Write("Введите  число: ");
+        int A = Convert.ToInt32(Console.ReadLine());
+        int result = 0;
+        ///цикл подсчёта суммы цифр в числе А
+        while (A!= 0)
+        {
+            result += A % 10;
+            A /= 10;
+        }
+        ///Вывод результатов вычислений
+        Console.WriteLine($"{result}");
 
-Console.WriteLine($" {result}");
+    }
+ 
+}
